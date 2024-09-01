@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/todoListFragment">
+
+    <fragment
+            android:id="@+id/todoListFragment"
+            android:name="com.example.todoapp.view.TodoListFragment"
+            android:label="@string/nav_label_todo_list_title"
+            tools:layout="@layout/fragment_todo_list">
+        <action
+                android:id="@+id/action_todoListFragment_to_addTaskFragment"
+                app:destination="@id/addTaskFragment" />
+        <action
+                android:id="@+id/action_todoListFragment_to_editTaskFragment"
+                app:destination="@id/editTaskFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/addTaskFragment"
+            android:name="com.example.todoapp.view.AddTaskFormFragment"
+            android:label="@string/nav_label_add_task_title"
+            tools:layout="@layout/fragment_add_task">
+        <action
+                android:id="@+id/action_addTaskFragment_to_todoListFragment"
+                app:destination="@id/todoListFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/editTaskFragment"
+            android:name="com.example.todoapp.view.EditTaskFormFragment"
+            android:label="@string/nav_label_edit_task_title"
+            tools:layout="@layout/fragment_edit_task">
+        <argument
+                android:name="task"
+                app:argType="com.example.todoapp.model.TaskDomain" />
+        <action
+                android:id="@+id/action_editTaskFragment_to_todoListFragment"
+                app:destination="@id/todoListFragment" />
+    </fragment>
+</navigation>

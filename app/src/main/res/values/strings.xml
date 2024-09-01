@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <string name="nav_label_todo_list_title">タスク一覧</string>
+    <string name="nav_label_add_task_title">タスク追加</string>
+    <string name="nav_label_edit_task_title">タスク編集</string>
+
+    <string name="completed">完了</string>
+    <string name="incomplete">未完了</string>
+
+    <string name="todo_list_empty_message">新しいタスクを作成しましょう!</string>
+    <string name="todo_list_task_description">タスクを追加</string>
+    <string name="todo_list_task_edit_description">編集</string>
+
+    <string name="layout_item_task_due">期日</string>
+    <string name="layout_item_undecided">未定</string>
+    <string name="layout_item_no_description">なし</string>
+
+    <string name="add_task_no_title_error_message">タイトルを入力してください</string>
+
+    <string name="task_form_task_undecided">未定</string>
+    <string name="task_form_task_description">説明</string>
+    <string name="task_form_task_due_date">期日:</string>
+    <string name="task_form_task_date_select_button">日付選択</string>
+    <string name="task_form_task_completed">完了</string>
+    <string name="task_form_task_save">保存</string>
+    <string name="task_form_task_no_description">なし</string>
+    <string name="task_form_task_title">タイトル</string>
+
+    <string name="delete_confirmation_dialog_title">タスクを削除しますか？</string>
+    <string name="delete_confirmation_dialog_delete">削除</string>
+    <string name="delete_confirmation_dialog_cancel">キャンセル</string>
+</resources>

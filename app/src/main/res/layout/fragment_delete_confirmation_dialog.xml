@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_confirmation_dialog_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm_delete_button"
+            style="@style/outlinedButtonStyle"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/delete_confirmation_dialog_delete"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_button"
+            style="@style/outlinedButtonStyle"
+            android:textColor="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/delete_confirmation_dialog_cancel"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+</LinearLayout>

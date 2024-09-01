@@ -1,0 +1,22 @@
+name: CI-CD
+
+on:
+  pull_request:
+    branches: ["main", "dev"]
+    types: [opened, synchronize]
+
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  AutoMerge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Auto Merge
+        uses: pascalgn/automerge-action@v0.16.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
