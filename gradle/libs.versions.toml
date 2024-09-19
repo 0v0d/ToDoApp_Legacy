@@ -28,7 +28,7 @@ serialization = "2.0.20"
 googleServices = "4.4.2"
 legacySupportV4 = "1.0.0"
 lifecycleLivedataKtx = "2.8.4"
-lifecycleViewmodelKtx = "2.8.4"
+lifecycleViewmodelKtx = "2.8.6"
 fragmentKtx = "1.8.2"
 
 [libraries]
