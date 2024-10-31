@@ -27,7 +27,7 @@ detekt = "1.23.6"
 serialization = "2.0.20"
 googleServices = "4.4.2"
 legacySupportV4 = "1.0.0"
-lifecycleLivedataKtx = "2.8.4"
+lifecycleLivedataKtx = "2.8.7"
 lifecycleViewmodelKtx = "2.8.4"
 fragmentKtx = "1.8.2"
 
